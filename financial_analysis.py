@@ -1,55 +1,50 @@
-# AI-Based Financial Analysis Assistant
-# Calculates key financial ratios and provides basic interpretations.
+import csv
 
-def financial_analysis(data):
-    revenue = data["revenue"]
-    net_profit = data["net_profit"]
-    current_assets = data["current_assets"]
-    current_liabilities = data["current_liabilities"]
-    total_debt = data["total_debt"]
-    total_equity = data["total_equity"]
+def financial_analysis(row):
+    revenue = float(row["Revenue"])
+    net_profit = float(row["Net_Profit"])
+    current_assets = float(row["Current_Assets"])
+    current_liabilities = float(row["Current_Liabilities"])
+    total_debt = float(row["Total_Debt"])
+    total_equity = float(row["Total_Equity"])
 
-    # Financial ratios
     profit_margin = (net_profit / revenue) * 100
     current_ratio = current_assets / current_liabilities
     debt_to_equity = total_debt / total_equity
 
-    print("FINANCIAL ANALYSIS REPORT")
-    print("-" * 40)
+    print(f"\nFINANCIAL ANALYSIS - {row['Company']} ({row['Year']})")
+    print("-" * 45)
 
+    print(f"Revenue: ₹{revenue:,.0f}")
+    print(f"Net Profit: ₹{net_profit:,.0f}")
     print(f"Net Profit Margin: {profit_margin:.2f}%")
     print(f"Current Ratio: {current_ratio:.2f}")
     print(f"Debt-to-Equity Ratio: {debt_to_equity:.2f}")
 
     print("\nKEY INSIGHTS")
-    print("-" * 40)
+    print("-" * 45)
 
     if profit_margin >= 10:
-        print("• Profitability: The company has a healthy net profit margin.")
+        print("• Profitability is relatively healthy.")
     else:
-        print("• Profitability: The company may need to improve its profitability.")
+        print("• Profitability may need improvement.")
 
     if current_ratio >= 1.5:
-        print("• Liquidity: The company appears to have a comfortable short-term liquidity position.")
+        print("• Liquidity position is comfortable.")
     elif current_ratio >= 1:
-        print("• Liquidity: The company can cover its short-term liabilities, but the position should be monitored.")
+        print("• Short-term liquidity is adequate but should be monitored.")
     else:
-        print("• Liquidity: The company may face difficulty meeting short-term obligations.")
+        print("• Short-term liquidity may require attention.")
 
     if debt_to_equity <= 1:
-        print("• Solvency: Debt levels appear relatively manageable compared with equity.")
+        print("• Debt levels are relatively manageable.")
     else:
-        print("• Solvency: The company has relatively high debt compared with equity.")
+        print("• Debt is relatively high compared with equity.")
 
 
-# Example financial data
-company_data = {
-    "revenue": 10000000,
-    "net_profit": 1500000,
-    "current_assets": 8000000,
-    "current_liabilities": 5000000,
-    "total_debt": 6000000,
-    "total_equity": 10000000
-}
+# Read financial data from CSV
+with open("data/financial_data.csv", "r") as file:
+    reader = csv.DictReader(file)
 
-financial_analysis(company_data)
+    for row in reader:
+        financial_analysis(row)
