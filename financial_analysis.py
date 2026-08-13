@@ -44,7 +44,27 @@ def financial_analysis(row):
 
 # Read financial data from CSV
 with open("data/financial_data.csv", "r") as file:
-    reader = csv.DictReader(file)
+    reader = list(csv.DictReader(file))
 
-    for row in reader:
-        financial_analysis(row)
+for row in reader:
+    financial_analysis(row)
+
+# Year-on-year growth analysis
+if len(reader) >= 2:
+    previous_year = reader[-2]
+    current_year = reader[-1]
+
+    revenue_growth = (
+        (float(current_year["Revenue"]) - float(previous_year["Revenue"]))
+        / float(previous_year["Revenue"])
+    ) * 100
+
+    profit_growth = (
+        (float(current_year["Net_Profit"]) - float(previous_year["Net_Profit"]))
+        / float(previous_year["Net_Profit"])
+    ) * 100
+
+    print("\nYEAR-ON-YEAR GROWTH")
+    print("-" * 45)
+    print(f"Revenue Growth: {revenue_growth:.2f}%")
+    print(f"Net Profit Growth: {profit_growth:.2f}%")
