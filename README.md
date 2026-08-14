@@ -33,6 +33,7 @@ AI-Financial-Analysis-Assistant/
 │
 ├── README.md
 ├── financial_analysis.py
+├── financial_trend.png
 │
 ├── data/
 │   └── financial_data.csv
