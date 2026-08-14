@@ -57,7 +57,7 @@ The project uses sample company financial data for demonstration.
 The Python program processes the data and produces financial ratios and basic observations.
 ### 📊 Financial Trend
 
-![Revenue and Net Profit Trend](financial_trend.png)
+![Revenue and Net Profit Trend](./financial_trend.png)
 
 ## 🤖 AI Component
 
