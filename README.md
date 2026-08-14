@@ -62,7 +62,7 @@ The Python program processes the data and produces financial ratios, year-on-yea
 
 ### 📊 Financial Trend
 
-<img src="https://raw.githubusercontent.com/shivaninomula28-droid/AI-Financial-Analysis-Assistant/main/financial_trend.png" alt="Revenue and Net Profit Trend">
+![Reliance Industries Revenue and Net Profit Trend](reliance_financial_trend.png)
 ## 📊 Project Results
 
 The project successfully processes sample company financial data and generates:
