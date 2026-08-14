@@ -61,6 +61,26 @@ The Python program processes the data and produces financial ratios, year-on-yea
 ### 📊 Financial Trend
 
 <img src="https://raw.githubusercontent.com/shivaninomula28-droid/AI-Financial-Analysis-Assistant/main/financial_trend.png" alt="Revenue and Net Profit Trend">
+## 📊 Project Results
+
+The project successfully processes sample company financial data and generates:
+
+- Revenue and net profit analysis
+- Year-on-year growth percentages
+- Net profit margin
+- Current ratio
+- Debt-to-equity ratio
+- Automated financial observations
+- AI-assisted financial explanations
+- Financial trend visualization
+
+### Sample Output
+
+A sample financial analysis report is included in:
+
+`financial_analysis_report.md`
+
+The project demonstrates how financial data can be converted into meaningful business insights using Python and AI-assisted analysis.
 
 ## 🤖 AI Component
 
