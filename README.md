@@ -17,6 +17,7 @@ The objective of this project is to demonstrate how Python and AI-assisted analy
 - Debt-to-equity ratio
 - Automated financial observations
 - AI prompt framework for generating business explanations
+- Financial trend visualization
 
 ## 🛠️ Tools & Technologies
 
@@ -25,6 +26,7 @@ The objective of this project is to demonstrate how Python and AI-assisted analy
 - GitHub
 - AI / Prompt Engineering
 - Financial Analysis
+- Data Visualization
 
 ## 📁 Project Structure
 
@@ -54,10 +56,11 @@ AI-Financial-Analysis-Assistant/
 
 The project uses sample company financial data for demonstration.
 
-The Python program processes the data and produces financial ratios and basic observations.
+The Python program processes the data and produces financial ratios, year-on-year growth, and basic financial observations.
+
 ### 📊 Financial Trend
 
-![Revenue and Net Profit Trend](./financial_trend.png)
+![Revenue and Net Profit Trend](https://github.com/shivaninomula28-droid/AI-Financial-Analysis-Assistant/blob/main/financial_trend.png?raw=true)
 
 ## 🤖 AI Component
 
@@ -80,6 +83,7 @@ The project does not provide investment recommendations.
 - Build a Streamlit web application
 - Add more financial ratios
 - Compare multiple companies
+- Improve AI-generated financial explanations
 
 ## 👩‍💼 Project Focus
 
