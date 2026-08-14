@@ -60,7 +60,7 @@ The Python program processes the data and produces financial ratios, year-on-yea
 
 ### 📊 Financial Trend
 
-![Revenue and Net Profit Trend](https://github.com/shivaninomula28-droid/AI-Financial-Analysis-Assistant/blob/main/financial_trend.png?raw=true)
+<img src="https://raw.githubusercontent.com/shivaninomula28-droid/AI-Financial-Analysis-Assistant/main/financial_trend.png" alt="Revenue and Net Profit Trend">
 
 ## 🤖 AI Component
 
