@@ -56,7 +56,7 @@ AI-Financial-Analysis-Assistant/
 
 ## 🔍 Example Analysis
 
-The project uses sample company financial data for demonstration.
+The project uses publicly available financial data of Reliance Industries Limited for financial analysis and demonstration.
 
 The Python program processes the data and produces financial ratios, year-on-year growth, and basic financial observations.
 
